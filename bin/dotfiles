@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 [[ "$1" == "source" ]] || \
 
-echo 'Dotfiles - oyvinmar'
+echo 'Dotfiles - runesto'
 
 if [[ "$1" == "-h" || "$1" == "--help" ]]; then cat <<HELP
 
 Usage: $(basename "$0")
 
 See the README for documentation.
-https://github.com/oyvinmar/dotfiles
+https://github.com/runesto/dotfiles
 
 HELP
 exit; fi
@@ -65,9 +65,6 @@ function is_ubuntu() {
 }
 function is_ubuntu_desktop() {
   dpkg -l ubuntu-desktop >/dev/null 2>&1 || return 1
-}
-function is_zsh() {
-  [[ $(echo $SHELL) == $(which zsh) ]] || return 1
 }
 function get_os() {
   for os in macos ubuntu ubuntu_desktop; do
@@ -398,11 +395,11 @@ while true; do sudo -n true; sleep 10; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install a custom sudoers file that allows "sudo apt-get" to be executed
 # without asking for a password.
-sudoers_file=/etc/sudoers.d/oyvinmar-dotfiles
+sudoers_file=/etc/sudoers.d/runesto-dotfiles
 # Contents of the sudoers file.
 function sudoers_text() {
   cat <<EOF
-# This file was created by oyvinmar's dotfiles script on $(date -I)
+# This file was created by runesto's dotfiles script on $(date -I)
 # (which will never update it, only recreate it if it's missing)
 # Sudoers reference: http://ubuntuforums.org/showthread.php?t=1132821
 
@@ -473,7 +470,7 @@ if [[ ! -d $DOTFILES ]]; then
   # Dotfiles directory doesn't exist? Clone it!
   e_header "Downloading dotfiles"
   git clone --branch ${DOTFILES_GH_BRANCH:-master} --recursive \
-    git://github.com/${DOTFILES_GH_USER:-oyvinmar}/dotfiles.git $DOTFILES
+    git://github.com/${DOTFILES_GH_USER:-runesto}/dotfiles.git $DOTFILES
   cd $DOTFILES
 elif [[ "$1" != "restart" ]]; then
   # Make sure we have the latest files.

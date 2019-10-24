@@ -5,7 +5,7 @@ My macOS / Ubuntu dotfiles.
 Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied from https://github.com/cowboy/dotfiles, who again... yeah, you get the picture...)
 
 Some notable tweaks:
- - _Expect soemthing here soon_
+ - _Expect something here soon_
 
 ## About this project
 
