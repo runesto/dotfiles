@@ -114,7 +114,7 @@ Why? Because I often completely break this repo while updating. Which means that
 ```sh
 export DOTFILES_GH_USER=runesto
 export DOTFILES_GH_BRANCH=master
-bash -c "$(wget -qO- https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && zsh
+bash -c "$(wget -qO- https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && source ~/.bashrc
 ```
 
 #### macOS
@@ -122,7 +122,7 @@ bash -c "$(wget -qO- https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES
 ```sh
 export DOTFILES_GH_USER=runesto
 export DOTFILES_GH_BRANCH=master
-bash -c "$(curl -fsSL https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && zsh
+bash -c "$(curl -fsSL https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && source ~/.bashrc
 ```
 
 Since you'll be using the [dotfiles][dotfiles] command on subsequent runs, you'll only have to set the `DOTFILES_GH_USER` variable for the initial install, but if you have a custom branch, you _will_ need to export `DOTFILES_GH_BRANCH` for subsequent runs.
