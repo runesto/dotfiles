@@ -2,16 +2,10 @@
 
 My macOS / Ubuntu dotfiles.
 
-Shamelessly copied from https://github.com/cowboy/dotfiles
+Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied from https://github.com/cowboy/dotfiles, who again... yeah, you get the picture...)
 
 Some notable tweaks:
-- Use [zsh](https://www.zsh.org/) shell.
-- [Pure](https://github.com/sindresorhus/pure) prompt.
-- [Volta](https://docs.volta.sh/) to manage JavaScript command-line tools (i.e. NodeJS, yarn, etc).
-- [Teamocil](http://www.teamocil.com/) for creating tmux panes and windows.
-- [Hyper](https://hyper.is/) with [Snazzy](https://github.com/sindresorhus/hyper-snazzy/) theme.
-
-
+ - _Expect soemthing here soon_
 
 ## About this project
 
@@ -33,7 +27,7 @@ When [dotfiles][dotfiles] is run for the first time, it does a few things:
 1. You are prompted to choose scripts in `/init` to be executed. The installer attempts to only select relevant scripts, based on the detected OS and the script filename.
 1. Your chosen init scripts are executed (in alphanumeric order, hence the funky names). ([read more](#the-init-step))
 
-On subsequent runs, step 1 is skipped, step 2 just updates the already-existing repo, and step 5 remembers what you selected the last time. The other steps are the same.
+On subsequent runs, step 1 is skipped, step 2 just updates the already-existing repo, and step 6 remembers what you selected the last time. The other steps are the same.
 
 ### Other subdirectories
 
@@ -113,12 +107,12 @@ Why? Because I often completely break this repo while updating. Which means that
 
 1. [Read my gently-worded note](#heed-this-critically-important-warning-before-you-install)
 1. Fork this repo
-1. Open a terminal/shell and do this (change `oyvinmar` and `master` as appropriate):
+1. Open a terminal/shell and do this (change `runesto` and `master` as appropriate):
 
 #### Ubuntu
 
 ```sh
-export DOTFILES_GH_USER=oyvinmar
+export DOTFILES_GH_USER=runesto
 export DOTFILES_GH_BRANCH=master
 bash -c "$(wget -qO- https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && zsh
 ```
@@ -126,7 +120,7 @@ bash -c "$(wget -qO- https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES
 #### macOS
 
 ```sh
-export DOTFILES_GH_USER=oyvinmar
+export DOTFILES_GH_USER=runesto
 export DOTFILES_GH_BRANCH=master
 bash -c "$(curl -fsSL https://raw.github.com/$DOTFILES_GH_USER/dotfiles/$DOTFILES_GH_BRANCH/bin/dotfiles)" && zsh
 ```
@@ -140,18 +134,18 @@ There's a lot of stuff that requires admin access via `sudo`, so be warned that 
 #### Ubuntu
 
 ```sh
-bash -c "$(wget -qO- https://raw.github.com/oyvinmar/dotfiles/master/bin/dotfiles)" && zsh
+bash -c "$(wget -qO- https://raw.github.com/runesto/dotfiles/master/bin/dotfiles)" && source ~/.bashrc
 ```
 
 #### macOS
 
 ```sh
-bash -c "$(curl -fsSL https://raw.github.com/oyvinmar/dotfiles/master/bin/dotfiles)" && zsh
+bash -c "$(curl -fsSL https://raw.github.com/runesto/dotfiles/master/bin/dotfiles)" && source ~/.bashrc
 ```
 
 ## Aliases and Functions
 
-To keep things easy, the `~/.zshrc` file is very simple, and should never need to be modified. Instead, add your aliases, functions, settings, etc into one of the files in the `source` subdirectory, or add a new file. They're all automatically sourced when a new shell is opened. Take a look, I have [a lot of aliases and functions](source).
+To keep things easy, the `~/.bashrc` and `~/.bash_profile` files are very simple, and should never need to be modified. Instead, add your aliases, functions, settings, etc into one of the files in the `source` subdirectory, or add a new file. They're all automatically sourced when a new shell is opened. Take a look, I have [a lot of aliases and functions](source).
 
 ## Scripts
 
@@ -163,5 +157,5 @@ In addition to the aforementioned [dotfiles][dotfiles] script, there are a few o
 
 ## License
 
-Copyright (c) 2019 Øyvind Marthinsen
+Copyright (c) 2019 Rune Storløpa
 Licensed under the MIT license.
