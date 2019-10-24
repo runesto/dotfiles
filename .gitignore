@@ -1,0 +1,18 @@
+# Lots of junk goes in here.
+/caches/
+/backups/
+
+# Don't commit secret stuff!
+/link/.ssh/known_hosts*
+/link/.ssh/cache/*
+!/link/.ssh/cache/.gitkeep
+/link/.ssh/keys/*
+!/link/.ssh/keys/.gitkeep
+/link/.ssh/conf/hosts.ssh
+!/link/.ssh/authorized_keys
+
+# vim pluggins
+/link/.vim/plugged/
+
+# Ignore any file with LOCAL in the name (good for per-machine vars/functions)
+*LOCAL*

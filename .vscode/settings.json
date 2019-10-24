@@ -1,0 +1,8 @@
+{
+  "search.followSymlinks": false,
+  "search.exclude": {
+    "backups/": true,
+    "vendor/": true,
+    "caches/": true
+  }
+}

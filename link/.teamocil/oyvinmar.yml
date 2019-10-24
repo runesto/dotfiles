@@ -1,0 +1,7 @@
+windows:
+  - name: devlop
+    root: ~/develop/personal/oyvinmar.com
+    layout: even-horizontal
+    panes:
+      - yarn start
+      - git status

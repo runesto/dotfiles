@@ -1,0 +1,7 @@
+windows:
+  - name: entur-partner
+    root: ~/develop/entur/op-ui
+    layout: even-horizontal
+    panes:
+      - npm start
+      - git status

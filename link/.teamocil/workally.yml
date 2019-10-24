@@ -1,0 +1,8 @@
+name: workally
+windows:
+  - name: develop
+    root: ~/develop/personal/workally
+    layout: even-horizontal
+    panes:
+      - yarn dev
+      - git status
