@@ -1,5 +1,7 @@
 # Dotfiles
 
+![](https://github.com/runesto/dotfiles/workflows/TestOnMac/badge.svg)
+
 My macOS / Ubuntu dotfiles.
 
 Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied from https://github.com/cowboy/dotfiles, who again... yeah, you get the picture...)
