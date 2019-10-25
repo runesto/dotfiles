@@ -2,8 +2,8 @@ name: Test dotfiles installation on mac
 on: [push]
 
 jobs:
-  name: TestOnMac
   build:
+    name: TestOnMac
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1

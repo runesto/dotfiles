@@ -1,6 +1,4 @@
-# Dotfiles
-
-![](https://github.com/runesto/dotfiles/workflows/TestOnMac/badge.svg)
+# Dotfiles ![](https://github.com/runesto/dotfiles/workflows/Test%20dotfiles%20installation%20on%20mac/badge.svg)
 
 My macOS / Ubuntu dotfiles.
 
