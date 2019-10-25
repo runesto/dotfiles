@@ -5,7 +5,8 @@ My macOS / Ubuntu dotfiles.
 Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied from https://github.com/cowboy/dotfiles, who again... yeah, you get the picture...)
 
 Some notable tweaks:
- - _Expect something here soon_
+ - Removed oyvinmars additions for zsh, Pure, Volta, Teamocil and Hyper
+ - Automatic addition of private ssh keys found in `~/.ssh` to Keychain
 
 ## About this project
 
@@ -68,9 +69,6 @@ Scripts in the `/init` subdirectory will be executed. A whole bunch of things wi
 
 #### Both
 
-- Set zsh as the default login shell via the [init/40_zsh.sh](init/40_zsh.sh) scrip
-- [Volta](https://docs.volta.sh/) with Node.js, npm and yarn via the [init/50_node.sh](init/50_volta.sh) script
-
 ## Hacking my dotfiles
 
 Because the [dotfiles][dotfiles] script is completely self-contained, you should be able to delete everything else from your dotfiles repo fork, and it will still work. The only thing it really cares about are the `/copy`, `/link` and `/init` subdirectories, which will be ignored if they are empty or don't exist.
@@ -95,7 +93,7 @@ You might want to set up your ubuntu server [like I do it](https://github.com/co
 
 Either way, you should at least update/upgrade APT with `sudo apt-get -qq update && sudo apt-get -qq dist-upgrade` first.
 
-_Tested in Ubuntu 14.04 LTS_
+_Not tested_
 
 ### Heed this critically important warning before you install
 
@@ -152,7 +150,7 @@ To keep things easy, the `~/.bashrc` and `~/.bash_profile` files are very simple
 In addition to the aforementioned [dotfiles][dotfiles] script, there are a few other [bin scripts](bin).
 
 - [dotfiles][dotfiles] - (re)initialize dotfiles. It might ask for your password (for `sudo`).
-- [src](link/.zshrc#L78-84) - (re)source all files in `/source` directory
+- [src](link/.bashrc#L8-18) - (re)source all files in `/source` directory
 - Look through the [bin](bin) subdirectory for a few more.
 
 ## License

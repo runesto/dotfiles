@@ -17,16 +17,10 @@ function brew_install_recipes() {
 
 # Homebrew recipes
 recipes=(
-  zsh
+  awscli
   httpie
   git
-  nmap
-  sl
-  thefuck
-  tmux
   wget
-  ruby
-  neovim
   tree
   bat
 )

@@ -1,7 +1,0 @@
-windows:
-  - name: netext-editor
-    root: ~/develop/entur/netex-editor
-    layout: even-horizontal
-    panes:
-      - yarn dev
-      - git status

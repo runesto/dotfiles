@@ -11,19 +11,16 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
-  # alfred
-  # bartender
-  # docker
-  # dropbox
-  # google-chrome
-  # google-chrome-canary
-  # visual-studio-code
-  # firefox
-  # iterm2
-  # macvim
-  # slack
-  # spotify
-  # the-unarchiver
+  alfred
+  bartender
+  docker
+  dropbox
+  google-chrome
+  firefox
+  iterm2
+  slack
+  spotify
+  the-unarchiver
 )
 
 # Install Homebrew casks.

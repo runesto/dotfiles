@@ -1,16 +1,16 @@
 # Editing
 
-export EDITOR=nvim
+export EDITOR=vim
 
 # If mvim is installed, use it instead of native vim
-if [[ "$(which mvim)" =~ mvim$ ]]; then
-   EDITOR="mvim -v"
-   alias vim="$EDITOR"
+if [[ "$(which mvim)" ]]; then
+    EDITOR="mvim -v"
+    alias vim="$EDITOR"
 fi
 
 if [[ ! "$SSH_TTY" ]]; then
   if [[ ! "$TMUX" ]]; then
-    is_macos && EDITOR=mvim || EDITOR=gvim
+    is_osx && EDITOR=mvim || EDITOR=gvim
   fi
   export LESSEDIT="$EDITOR ?lm+%lm -- %f"
   export GIT_EDITOR="$EDITOR -f"
@@ -26,6 +26,7 @@ function q() {
     $EDITOR - > /dev/null
   fi
 }
+alias qv="q $DOTFILES/link/.{,g}vimrc +'cd $DOTFILES'"
 alias qs="q $DOTFILES"
 
 # For when you have vim on the brain
