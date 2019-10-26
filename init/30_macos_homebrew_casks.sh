@@ -20,6 +20,7 @@ casks=(
   iterm2
   slack
   spotify
+  sublime-text
   the-unarchiver
 )
 
@@ -30,5 +31,5 @@ if (( ${#casks[@]} > 0 )); then
   for cask in "${casks[@]}"; do
     brew cask install $cask
   done
-  brew cask cleanup
+  brew cleanup
 fi
