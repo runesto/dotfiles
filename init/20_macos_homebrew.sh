@@ -13,6 +13,3 @@ fi
 e_header "Updating Homebrew"
 brew doctor
 brew update
-
-e_header "Tapping drivers"
-brew tap homebrew/cask-drivers
