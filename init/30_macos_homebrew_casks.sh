@@ -26,6 +26,7 @@ casks=(
   iterm2
   mailplane
   microsoft-office
+  remember-the-milk
   skype
   slack
   snagit
