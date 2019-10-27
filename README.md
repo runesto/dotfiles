@@ -7,6 +7,8 @@ Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied f
 Some notable tweaks:
  - Removed oyvinmars additions for zsh, Pure, Volta, Teamocil and Hyper
  - Automatic addition of private ssh keys found in `~/.ssh` to Keychain
+ - Added support for applications in Mac App Store
+ - Added an extra `personal` section for HomeBrew apps only used on personal machines
 
 ## About this project
 
