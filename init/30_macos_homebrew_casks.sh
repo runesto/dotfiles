@@ -11,17 +11,28 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
+  1password
   alfred
   bartender
   docker
+  disk-inventory-x
   dropbox
-  google-chrome
+  evernote
   firefox
+  flux
+  google-backup-and-sync
+  google-chrome
+  intellij-idea
   iterm2
+  mailplane
+  microsoft-office
+  skype
   slack
+  snagit
   spotify
   sublime-text
   the-unarchiver
+  vlc
 )
 
 # Install Homebrew casks.
