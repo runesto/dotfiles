@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: configure
-        run: bash -c ./bin/dotfiles
+        run: bash -c ./bin/dotfiles -p
       - name: source bash
         run: source ~/.bashrc
