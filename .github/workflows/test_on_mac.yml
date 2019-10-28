@@ -10,4 +10,4 @@ jobs:
       - name: configure
         run: bash -c ./bin/dotfiles -p
       - name: source bash
-        run: source ~/.bashrc
+        run: bash -c ~/.bashrc
