@@ -20,13 +20,16 @@ casks=(
   evernote
   firefox
   flux
+  freemind
   google-backup-and-sync
   google-chrome
   intellij-idea
   iterm2
   mailplane
   microsoft-office
+  postman
   remember-the-milk
+  rescuetime
   skype
   slack
   snagit
