@@ -13,8 +13,8 @@ https://github.com/runesto/dotfiles
 HELP
 exit; fi
 
-#include_personal_applications=false
-#if [[ "$1" == "-p" || "$1" == "-P" ]]; then include_personal_applications=true; fi
+include_personal_applications=false
+if [[ "$1" == "-p" || "$1" == "-P" ]]; then include_personal_applications=true; fi
 
 ###########################################
 # GENERAL PURPOSE EXPORTED VARS / FUNCTIONS
