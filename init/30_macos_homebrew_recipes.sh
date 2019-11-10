@@ -18,12 +18,16 @@ function brew_install_recipes() {
 
 # Homebrew recipes
 recipes=(
+  aws-iam-authenticator
   awscli
   bash-completion
   bat
   curl
   git
+  gradle
   httpie
+  jenv
+  kubernetes-cli
   mas
   wget
 )
