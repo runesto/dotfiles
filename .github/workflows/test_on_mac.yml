@@ -10,4 +10,4 @@ jobs:
       - name: configure
         run: bash -c "./bin/dotfiles -p"
       - name: test
-        run: skx/github-action-tester@master
+        uses: skx/github-action-tester@master
