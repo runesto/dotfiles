@@ -29,6 +29,7 @@ recipes=(
   jenv
   kubernetes-cli
   mas
+  watch
   wget
 )
 
