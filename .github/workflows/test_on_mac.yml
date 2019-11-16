@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: configure
         run: bash -c "./bin/dotfiles -p"
-      - name: github-action-tester
-        uses: skx/github-action-tester@release-0.10
+      - name: check personal installation
+        run: bash -c "[[ ! -d  "/Applications/Steam.app" ]] && exit 1"
