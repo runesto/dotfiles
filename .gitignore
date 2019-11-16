@@ -11,6 +11,9 @@
 /link/.ssh/conf/hosts.ssh
 !/link/.ssh/authorized_keys
 
+/link/.aws/credentials
+!/link/.aws/.gitkeep
+
 # vim pluggins
 /link/.vim/plugged/
 

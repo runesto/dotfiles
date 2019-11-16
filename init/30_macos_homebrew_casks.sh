@@ -26,7 +26,7 @@ casks=(
   intellij-idea
   iterm2
   mailplane
-  macpass
+  macpass # Ruter
   microsoft-office
   postman
   remember-the-milk

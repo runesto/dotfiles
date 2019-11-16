@@ -27,7 +27,7 @@ recipes=(
   gradle
   httpie
   jenv
-  #kubernetes-cli (part of Docker-cask)
+  # kubernetes-cli # (part of Docker-cask)
   mas
   watch
   wget
