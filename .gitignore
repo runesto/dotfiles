@@ -14,6 +14,10 @@
 /link/.aws/credentials
 !/link/.aws/.gitkeep
 
+# gradle.properties contains nexus credentials
+/link/.gradle/gradle.properties
+!/link/.gradle/.gitkeep
+
 # vim pluggins
 /link/.vim/plugged/
 
