@@ -10,4 +10,4 @@ jobs:
       - name: configure
         run: bash -c "./bin/dotfiles -p"
       - name: check personal installation
-        run: bash -c "[[ ! -d  "/Applications/Steam.app" ]] && exit 1"
+        run: bash -c "[[ ! -d  '/Applications/Steam.app' ]] && exit 1"
