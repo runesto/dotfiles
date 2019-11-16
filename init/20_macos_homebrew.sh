@@ -15,4 +15,5 @@ brew doctor
 brew update
 
 e_header "Tapping drivers"
-brew tap homebrew/cask-drivers
+brew tap homebrew/cask-drivers # To install cask sonos
+brew tap AdoptOpenJDK/openjdk # To install openjdk earlier versions
