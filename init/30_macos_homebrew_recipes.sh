@@ -28,6 +28,7 @@ recipes=(
   httpie
   jenv
   # kubernetes-cli # (part of Docker-cask)
+  kubectx
   mas
   watch
   wget
