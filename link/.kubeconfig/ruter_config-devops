@@ -7,6 +7,7 @@ clusters:
 contexts:
 - context:
     cluster: arn:aws:eks:eu-west-1:859184448936:cluster/pleiades
+    namespace: taas-dev
     user: arn:aws:eks:eu-west-1:859184448936:cluster/pleiades
   name: arn:aws:eks:eu-west-1:859184448936:cluster/pleiades
 current-context: arn:aws:eks:eu-west-1:859184448936:cluster/pleiades
@@ -22,3 +23,4 @@ users:
       - -i
       - pleiades
       command: aws-iam-authenticator
+      env: null
