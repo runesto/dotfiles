@@ -24,6 +24,9 @@ recipes=(
   bat
   curl
   git
+  git-secret
+  gnupg
+  gnupg2
   gradle
   httpie
   jenv
