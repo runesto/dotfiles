@@ -32,6 +32,7 @@ recipes=(
   jenv
   # kubernetes-cli # (part of Docker-cask)
   kubectx
+  kubernetes-helm@2.11.0 #Ruter-version
   mas
   watch
   wget
