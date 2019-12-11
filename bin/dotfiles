@@ -524,10 +524,13 @@ function is_git_repo_ssh() {
 
 # Check if git-remote is ssh. If not try to change
 cd $DOTFILES
-if [[ ! is_git_repo_ssh ]]; then
+if ! is_git_repo_ssh; then
+  echo -e "\ndotfiles git-remote isn't ssh. Trying to change."
   git remote set-url origin git@github.com:${DOTFILES_GH_USER:-runesto}/dotfiles.git
-  if [[ ! is_git_repo_ssh ]]; then
+  if ! is_git_repo_ssh; then
     e_error "Tried to make git-remote ssh. Didn't work."
+  else
+    echo -e "\ndotfiles git-remote is now ssh."
   fi
 fi
 

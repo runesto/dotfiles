@@ -24,10 +24,15 @@ recipes=(
   bat
   curl
   git
+  git-secret
+  gnupg
+  gnupg2
   gradle
   httpie
   jenv
   # kubernetes-cli # (part of Docker-cask)
+  kubectx
+  kubernetes-helm@2.11.0 #Ruter-version
   mas
   watch
   wget
