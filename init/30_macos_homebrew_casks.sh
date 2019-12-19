@@ -26,6 +26,7 @@ casks=(
   google-chrome
   intellij-idea
   iterm2
+  kindle
   mailplane
   macpass # Ruter
   microsoft-office
