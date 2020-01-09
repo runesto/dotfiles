@@ -14,4 +14,9 @@ function eks-test() {
         export KUBECONFIG=~/.kubeconfig/ruter_config-test
 }
 
+function eks-team-admin-taas() {
+        export AWS_DEFAULT_PROFILE=ruter_eks_team_admin_taas
+        export KUBECONFIG=
+}
+
 eks-devops
