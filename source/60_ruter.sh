@@ -19,4 +19,9 @@ function eks-team-admin-taas() {
         export KUBECONFIG=
 }
 
+function eks-rune-storlopa() {
+        export AWS_DEFAULT_PROFILE=ruter_eks_rune_storlopa
+        export KUBECONFIG=
+}
+
 eks-devops
