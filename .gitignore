@@ -11,6 +11,8 @@
 /link/.ssh/conf/hosts.ssh
 !/link/.ssh/authorized_keys
 
+/link/.aws/cli
+/link/.aws/config
 /link/.aws/credentials
 !/link/.aws/.gitkeep
 

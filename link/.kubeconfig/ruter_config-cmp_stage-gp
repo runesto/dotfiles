@@ -1,0 +1,32 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRFNU1EY3hPREV4TlRnd04xb1hEVEk1TURjeE5URXhOVGd3TjFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS21LCkptMjl0SUpOUUw5SnVYZ2RpNXRoNGVHT0hpOTJGdUh4bys0REd3dDV0VjVQT1ZwVGpFOXpPVFRLY2w3OWZVL0oKcmd2SlBjZUVEM2xXWk9UYWlzZDJlZ0hoNGR4UDRvZ1hkTEJOS21pUXV4S1NvSk1XTWFyRDJ0cEJLTm5IbU5PbApicXZIa2tJaTlTZ1NNWjNYWlVCT3k0UDdqcmhIclZKRXRvVmdueVRjNHMySzdJSkVrWVlIbWV1SThiOEZEelBkCitHZXIxQVkxam91VVMwZzFOeWJYK0RFaWZBNE5YUjF2T0ZWMFVzdmN1cGdYb0FuTWlWSU5xM3ZtaHNjbDdQUVgKdjNXNHlWRkRuWDQxSXJqR2JINmVkaitlT2ZUMnRWUWV3MFp1S3l5NExmZkdJemxWK2puTHFGZ2FZeHNVZG9LMApBYzBiS3pVUHlpcW9JY2pDcGc4Q0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFKK2FpQWhMbFMwVGlOd2Nud21xdHZjeTNPNFgKYWhFdU1adkFjQWtEVmJiQ1hncEZJQ04vcFVZS0NqL1oveXNnQjJrZC9VU2swa0JiRDlSYTR0TGE1ZTlQbmErZgp3VjhzUUVaank2TVhQQy8wZ0NFQU15OThUK0hwVXNMZ0ticjJKak5mQ1JqN2JsaFhxME1mTWl5SkVnUVB5YlBNCi9pbTk3OGFDekZPSEtHZWtWMWJZeDFaL2ZuczFLMWYvQnhiRlpMNTl6OCs5ajRscXBFcExBelFUTDhGNEdlamkKZG9LcTU1RUtpOU9ua0Z1THh0TnVTRnRJeFRrMkZQV2dnU24zREF4b3IzN2hSYzAxQjkrbjdQVlljMmJ6c1NTLwpvSDQxbzI5eEprOGxXRjVGS0s5cTlQdmxYdUV2RVBUTzNXeU1BdHBtV2pOekY0cTFYbVdMdXR6RTJEZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://2020A4837BF1F47C53EBD4681D0E7A99.yl4.eu-west-1.eks.amazonaws.com
+  name: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+contexts:
+- context:
+    cluster: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+    user: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+  name: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+current-context: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - eu-west-1
+      - eks
+      - get-token
+      - --cluster-name
+      - eks-stage-gp-7Paf
+      - --role
+      - arn:aws:iam::739805770819:role/eks-stage-gp-taas-rbac
+      command: aws
+      env:
+      - name: AWS_PROFILE
+        value: ruter_eks-stage-gp
