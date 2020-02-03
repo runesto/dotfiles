@@ -14,7 +14,6 @@ casks=(
   1password
   adoptopenjdk11 # Ruter
   alfred
-  bartender
   docker
   disk-inventory-x
   dropbox
