@@ -1,6 +1,6 @@
 [user]
   name = Rune Storløpa
-  email = EMAIL
+  email = <>
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
@@ -40,3 +40,12 @@
 
 [push]
   default = tracking
+
+[includeIf "gitdir:~/src/ruter/"]
+  path = ~/ruter/.gitconfig
+
+[includeIf "gitdir:~/src/private/"]
+  path = ~/private/.gitconfig
+
+[includeIf "gitdir:~/src/knowit/"]
+  path = ~/knowit/.gitconfig
