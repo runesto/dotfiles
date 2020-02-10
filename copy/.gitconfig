@@ -42,10 +42,10 @@
   default = tracking
 
 [includeIf "gitdir:~/src/ruter/"]
-  path = ~/ruter/.gitconfig
+  path = ~/.gitconfig_ruter
 
 [includeIf "gitdir:~/src/private/"]
-  path = ~/private/.gitconfig
+  path = ~/.gitconfig_private
 
 [includeIf "gitdir:~/src/knowit/"]
-  path = ~/knowit/.gitconfig
+  path = ~/.gitconfig_knowit
