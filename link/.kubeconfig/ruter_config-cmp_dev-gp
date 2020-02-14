@@ -8,6 +8,7 @@ contexts:
 - context:
     cluster: arn:aws:eks:eu-west-1:822152007605:cluster/eks-dev-gp-S0HX
     user: arn:aws:eks:eu-west-1:822152007605:cluster/eks-dev-gp-S0HX
+    namespace: taas
   name: arn:aws:eks:eu-west-1:822152007605:cluster/eks-dev-gp-S0HX
 current-context: arn:aws:eks:eu-west-1:822152007605:cluster/eks-dev-gp-S0HX
 kind: Config

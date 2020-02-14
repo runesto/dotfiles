@@ -8,6 +8,7 @@ contexts:
 - context:
     cluster: arn:aws:eks:eu-west-1:905279427843:cluster/eks-prod-gp-L1LT
     user: arn:aws:eks:eu-west-1:905279427843:cluster/eks-prod-gp-L1LT
+    namespace: taas
   name: arn:aws:eks:eu-west-1:905279427843:cluster/eks-prod-gp-L1LT
 current-context: arn:aws:eks:eu-west-1:905279427843:cluster/eks-prod-gp-L1LT
 kind: Config

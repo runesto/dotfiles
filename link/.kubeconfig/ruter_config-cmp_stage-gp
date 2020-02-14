@@ -8,6 +8,7 @@ contexts:
 - context:
     cluster: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
     user: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
+    namespace: taas
   name: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
 current-context: arn:aws:eks:eu-west-1:739805770819:cluster/eks-stage-gp-7Paf
 kind: Config
