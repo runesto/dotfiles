@@ -23,6 +23,7 @@ recipes=(
   bash-completion
   bat
   curl
+  dos2unix
   git
   git-secret
   gnupg
