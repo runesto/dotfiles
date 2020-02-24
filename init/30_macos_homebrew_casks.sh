@@ -29,6 +29,7 @@ casks=(
   mailplane
   macpass # Ruter
   microsoft-office
+  osxfuse # Telepresence
   postman
   remember-the-milk
   rescuetime

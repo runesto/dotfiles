@@ -35,6 +35,7 @@ recipes=(
   kubectx
   kubernetes-helm@2.11.0 #Ruter-version
   mas
+  datawire/blackbird/telepresence
   watch
   wget
 )
