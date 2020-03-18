@@ -26,7 +26,7 @@ users:
       - --cluster-name
       - eks-prod-gp-L1LT
       - --role
-      - arn:aws:iam::905279427843:role/eks-prod-gp-taas-rbac
+      - arn:aws:iam::905279427843:role/eks-prod-gp-taas-rbac-tmp
       command: aws
       env:
       - name: AWS_PROFILE
