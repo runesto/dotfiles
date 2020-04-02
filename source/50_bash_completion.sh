@@ -2,8 +2,8 @@
 [[ ! "$(type -P brew)" ]] && e_error "Bash_completion expects Homebrew to be installed." && return 1
 
 # Link Docker completion (requires Docker installed)
-ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
-ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compose
+ln -sf /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
+ln -sf /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compose
 
 
 # Source bash_completion
