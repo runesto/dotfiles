@@ -152,7 +152,7 @@ To keep things easy, the `~/.bashrc` and `~/.bash_profile` files are very simple
 In addition to the aforementioned [dotfiles][dotfiles] script, there are a few other [bin scripts](bin).
 
 - [dotfiles][dotfiles] - (re)initialize dotfiles. It might ask for your password (for `sudo`).
-- [src](link/.bashrc#L8-18) - (re)source all files in `/source` directory
+- [src](link/.zshrc#L7-19) - (re)source all files in `/source` directory
 - Look through the [bin](bin) subdirectory for a few more.
 
 ## License
