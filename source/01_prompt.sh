@@ -1,3 +1,6 @@
+# Not RHEL-tested. Abort if RHEL
+is_rhel && return 1
+
 #Prompt med git-branch
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

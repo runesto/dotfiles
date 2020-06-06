@@ -1,3 +1,6 @@
+# macOS-only stuff. Abort if not macOS.
+is_macos || return 1
+
 # Exit if Homebrew is not installed
 [[ ! "$(type -P brew)" ]] && e_error "Bash_completion expects Homebrew to be installed." && return 1
 

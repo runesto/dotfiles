@@ -1,3 +1,6 @@
+# Not RHEL-tested. Abort if RHEL
+is_rhel && return 1
+
 # Editing
 
 export EDITOR=vim

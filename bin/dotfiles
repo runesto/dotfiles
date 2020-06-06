@@ -66,8 +66,11 @@ function is_ubuntu() {
 function is_ubuntu_desktop() {
   dpkg -l ubuntu-desktop >/dev/null 2>&1 || return 1
 }
+function is_rhel() {
+  return 1
+}
 function get_os() {
-  for os in macos ubuntu ubuntu_desktop; do
+  for os in macos ubuntu ubuntu_desktop rhel; do
     is_$os; [[ $? == ${1:-0} ]] && echo $os
   done
 }
@@ -344,6 +347,7 @@ function config_do() {
 
 # Copy, link, init, etc.
 function do_stuff() {
+  is_rhel && [[ "$1" != "init" ]] && e_header "Not yet supporting the $1 function in RHEL" && return 0
   local base dest skip
   local files=($DOTFILES/$1/*)
   [[ $(declare -f "$1_files") ]] && files=($($1_files "${files[@]}"))
