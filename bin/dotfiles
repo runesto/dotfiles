@@ -13,9 +13,6 @@ https://github.com/runesto/dotfiles
 HELP
 exit; fi
 
-include_personal_applications=false
-if [[ "$1" == "-p" || "$1" == "-P" ]]; then include_personal_applications=true; fi
-
 ###########################################
 # GENERAL PURPOSE EXPORTED VARS / FUNCTIONS
 ###########################################
@@ -285,11 +282,13 @@ function init_files() {
   else
     # Otherwise default to all scripts not specifically for other OSes
     oses=($(get_os 1))
+    personal="personal"
     for opt in "${menu_options[@]}"; do
       remove=
       for os in "${oses[@]}"; do
         [[ "$opt" =~ (^|[^a-z])$os($|[^a-z]) ]] && remove=1 && break
       done
+      [[ "$opt" =~ (^|[^a-z])$personal($|[^a-z]) ]] && remove=1 # Personal files should be default unchecked
       [[ "$remove" ]] || menu_selects=("${menu_selects[@]}" "$opt")
     done
   fi

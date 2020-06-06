@@ -4,10 +4,6 @@ is_macos || return 1
 # Exit if Homebrew is not installed.
 [[ ! "$(type -P brew)" ]] && e_error "Brew casks need Homebrew to install." && return 1
 
-# Exit if not run with personal flag
-[[ ! "$include_personal_applications" = true ]] && echo -e "\nNot run with -p or -P. Skipping personal apps" && return 1
-e_header "Installing personal apps"
-
 # Hack to show the first-run brew-cask password prompt immediately.
 brew cask info this-is-somewhat-annoying 2>/dev/null
 
