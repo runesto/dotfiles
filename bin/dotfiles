@@ -347,7 +347,7 @@ function config_do() {
 
 # Copy, link, init, etc.
 function do_stuff() {
-  is_rhel && [[ "$1" != "init" ]] && e_header "Not yet supporting the $1 function in RHEL" && return 0
+  is_rhel && [[ "$1" != "init" ]] && [[ "$1" != "link" ]] && e_header "Not yet supporting the $1 function in RHEL" && return 0
   local base dest skip
   local files=($DOTFILES/$1/*)
   [[ $(declare -f "$1_files") ]] && files=($($1_files "${files[@]}"))
