@@ -16,15 +16,6 @@
 /link/.aws/credentials
 !/link/.aws/.gitkeep
 
-# gradle.properties contains nexus credentials
-/link/.gradle/gradle.properties
-/link/.gradle/caches
-/link/.gradle/daemon/
-/link/.gradle/native/
-/link/.gradle/notifications/
-/link/.gradle/wrapper/
-!/link/.gradle/.gitkeep
-
 # vim pluggins
 /link/.vim/plugged/
 
