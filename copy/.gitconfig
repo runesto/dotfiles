@@ -41,11 +41,5 @@
 [push]
   default = tracking
 
-[includeIf "gitdir:~/src/ruter/"]
-  path = ~/.gitconfig_ruter
-
 [includeIf "gitdir:~/src/private/"]
   path = ~/.gitconfig_private
-
-[includeIf "gitdir:~/src/knowit/"]
-  path = ~/.gitconfig_knowit
