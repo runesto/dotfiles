@@ -8,12 +8,11 @@ yum_packages_to_install=()
 # Misc.
 yum_packages+=(
   atom
-#  blueberry
   ImageMagick
-  redshift # mangler config
+  redshift
   teams
   tree
-  tuned-profiles-compat # tuned-adm profile desktop-powersave
+  tuned-profiles-compat
 )
 
 # Install Yum packages.
