@@ -2,4 +2,4 @@
 is_rhel || return 1
 
 # Initialize power profile
-tuned-adm profile desktop-powersave
+tuned-adm profile laptop-ac-powersave
