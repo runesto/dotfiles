@@ -8,6 +8,7 @@ installed_atom_packages=()
 
 atom_packages+=(
   autosave-onchange
+  tree-view-sort
 )
 
 installed_atom_packages="$(apm list -b | cut -d '@' -f 1)"
