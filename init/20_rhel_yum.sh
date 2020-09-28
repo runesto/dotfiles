@@ -9,6 +9,7 @@ yum_packages_to_install=()
 yum_packages+=(
   atom
   ImageMagick
+  pavucontrol
   redshift
   teams
   tree
