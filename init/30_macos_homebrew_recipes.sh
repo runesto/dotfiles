@@ -27,7 +27,6 @@ recipes=(
   git
   git-secret
   gnupg
-  gnupg2
   gradle
   httpie
   jenv
