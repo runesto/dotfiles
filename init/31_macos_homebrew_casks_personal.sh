@@ -5,19 +5,19 @@ is_macos || return 1
 [[ ! "$(type -P brew)" ]] && e_error "Brew casks need Homebrew to install." && return 1
 
 # Install Homebrew recipes.
-function brew_install_recipes() {
-  recipes=($(setdiff "${recipes[*]}" "$(brew list)"))
-  if (( ${#recipes[@]} > 0 )); then
-    e_header "Installing Homebrew recipes/casks: ${recipes[*]}"
-    for recipe in "${recipes[@]}"; do
-      brew install $recipe
+function brew_install_casks() {
+  casks=($(setdiff "${casks[*]}" "$(brew list --casks)"))
+  if (( ${#casks[@]} > 0 )); then
+    e_header "Installing Homebrew casks: ${casks[*]}"
+    for cask in "${casks[@]}"; do
+      brew install --cask $cask
     done
     brew cleanup
   fi
 }
 
 # Homebrew casks
-recipes=(
+casks=(
   # Applications
 #  flowsync
   logitech-myharmony
@@ -25,6 +25,6 @@ recipes=(
   steam
 )
 
-brew_install_recipes
+brew_install_casks
 
 # Misc cleanup!
