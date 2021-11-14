@@ -30,6 +30,7 @@ function brew_install_casks() {
 
 # Homebrew recipes
 recipes=(
+  act
   aws-iam-authenticator
   awscli
   bash-completion
@@ -46,6 +47,7 @@ recipes=(
   kubectx
   # kubernetes-helm@2.11.0 #Ruter-version
   mas
+  n
   # datawire/blackbird/telepresence
   tree
   watch
