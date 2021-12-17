@@ -5,7 +5,7 @@ My macOS / Ubuntu dotfiles.
 Shamelessly copied from https://github.com/oyvinmar/dotfiles (who again copied from https://github.com/cowboy/dotfiles, who again... yeah, you get the picture...)
 
 Some notable tweaks:
- - Removed oyvinmars additions for zsh, Pure, Volta, Teamocil and Hyper
+ - Removed oyvinmars additions for Volta, Teamocil and Hyper
  - Automatic addition of private ssh keys found in `~/.ssh` to Keychain
  - Added support for applications in Mac App Store
 

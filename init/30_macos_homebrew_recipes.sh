@@ -4,8 +4,8 @@ is_macos || return 1
 # Exit if Homebrew is not installed.
 [[ ! "$(type -P brew)" ]] && e_error "Brew recipes need Homebrew to install." && return 1
 
-# Tap Homebrew versions for old temurin versions
-brew tap homebrew/cask-versions
+
+
 
 # Install Homebrew recipes.
 function brew_install_recipes() {

@@ -60,6 +60,15 @@ function is_dotfiles_bin() {
 function is_macos() {
   [[ "$OSTYPE" =~ ^darwin ]] || return 1
 }
+function is_macos_arm() {
+  if is_macos && [[ "$(uname -m)" =~ ^arm ]]; then
+    return 0
+  fi
+  return 1
+}
+function is_macos_x86() {
+  is_macos && [[ "$(uname -m)" =~ ^x86_64 ]] || return 1
+}
 function is_ubuntu() {
   [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] || return 1
 }
@@ -74,6 +83,11 @@ function get_os() {
     is_$os; [[ $? == ${1:-0} ]] && echo $os
   done
 }
+
+function is_zsh() {
+  [[ $(echo $SHELL) == $(which zsh) ]] || return 1
+}
+
 
 # Remove an entry from $PATH
 # Based on http://stackoverflow.com/a/2108540/142339

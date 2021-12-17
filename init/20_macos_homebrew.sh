@@ -21,4 +21,4 @@ brew update
 
 e_header "Tapping extra casks"
 brew tap homebrew/cask-drivers # To install cask sonos
-brew tap AdoptOpenJDK/openjdk # To install openjdk earlier versions
+brew tap homebrew/cask-versions # For old temurin versions
