@@ -43,3 +43,6 @@
 
 [includeIf "gitdir:~/src/private/"]
   path = ~/.gitconfig_private
+
+[includeIf "gitdir:~/src/tietoevry/"]
+  path = ~/.gitconfig_tietoevry

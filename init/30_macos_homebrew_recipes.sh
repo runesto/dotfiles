@@ -4,6 +4,9 @@ is_macos || return 1
 # Exit if Homebrew is not installed.
 [[ ! "$(type -P brew)" ]] && e_error "Brew recipes need Homebrew to install." && return 1
 
+# Tap Homebrew versions for old temurin versions
+brew tap homebrew/cask-versions
+
 # Install Homebrew recipes.
 function brew_install_recipes() {
   recipes=($(setdiff "${recipes[*]}" "$(brew list --formulae)"))
@@ -45,10 +48,11 @@ recipes=(
   jenv
   # kubernetes-cli # (part of Docker-cask)
   kubectx
-  # kubernetes-helm@2.11.0 #Ruter-version
+  # kubernetes-helm@2.11.0 #Ruter
+  maven
   mas
   n
-  # datawire/blackbird/telepresence
+  # datawire/blackbird/telepresence # Ruter
   tree
   watch
   wget
@@ -60,8 +64,8 @@ brew_install_recipes
 casks=(
   # Applications
   1password
-  # adoptopenjdk11 # Ruter
   alfred
+  asana
   docker
   disk-inventory-x
   dropbox
@@ -71,6 +75,7 @@ casks=(
   freemind
   google-chrome
   intellij-idea
+  intellij-idea-ce
   iterm2
   kindle
   kiwi-for-gmail
@@ -78,6 +83,7 @@ casks=(
   # macpass # Ruter
   microsoft-office
   # osxfuse # Telepresence
+  proxifier # TietoEvry
   postman
   remember-the-milk
   skype
@@ -85,8 +91,10 @@ casks=(
   snagit
   spotify
   sublime-text
+  temurin11 # TietoEvry
   the-unarchiver
   vlc
+  zoom
 )
 
 brew_install_casks
