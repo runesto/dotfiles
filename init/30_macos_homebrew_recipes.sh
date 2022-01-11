@@ -34,6 +34,7 @@ function brew_install_casks() {
 # Homebrew recipes
 recipes=(
   act
+  asdf
   aws-iam-authenticator
   awscli
   bash-completion
@@ -65,7 +66,6 @@ casks=(
   # Applications
   1password
   alfred
-  asdf
   asana
   docker
   disk-inventory-x
