@@ -1,7 +1,11 @@
 # Prompt theme
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
+
+# Single-line prompt as of https://github.com/sindresorhus/pure/wiki/Customizations,-hacks-and-tweaks#single-line-prompt
 prompt pure
+prompt_newline='%666v'
+PROMPT=" $PROMPT"
 
 # ls colors
 autoload -U colors && colors

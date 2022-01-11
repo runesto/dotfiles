@@ -4,6 +4,10 @@
 umask 022
 
 alias mci='mvn clean install'
+alias mcit='mvn clean install -Dmaven.test.skip'
+alias mt='mvn test'
+alias mi='mvn install'
+
 alias grep='grep --color=auto'
 
 alias ls='ls -F'

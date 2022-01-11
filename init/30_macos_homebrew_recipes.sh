@@ -65,6 +65,7 @@ casks=(
   # Applications
   1password
   alfred
+  asdf
   asana
   docker
   disk-inventory-x
@@ -91,7 +92,8 @@ casks=(
   snagit
   spotify
   sublime-text
-  temurin11 # TietoEvry
+ # temurin # TietoEvry
+ # temurin11 # TietoEvry
   the-unarchiver
   vlc
   zoom
