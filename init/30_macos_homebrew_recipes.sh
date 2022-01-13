@@ -34,7 +34,6 @@ function brew_install_casks() {
 # Homebrew recipes
 recipes=(
   act
-  asdf
   aws-iam-authenticator
   awscli
   bash-completion
@@ -92,8 +91,8 @@ casks=(
   snagit
   spotify
   sublime-text
- # temurin # TietoEvry
- # temurin11 # TietoEvry
+  temurin # Java17
+  temurin11 # Java11
   the-unarchiver
   vlc
   zoom
