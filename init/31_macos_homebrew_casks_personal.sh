@@ -19,8 +19,7 @@ function brew_install_casks() {
 # Homebrew casks
 casks=(
   # Applications
-#  flowsync
-  logitech-myharmony
+#  flowsync # Bruker telefonen istedenfor
   sonos
   steam
 )

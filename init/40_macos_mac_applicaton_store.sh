@@ -16,8 +16,6 @@ function mac_application_store_install() {
 [[ ! "$(type -P mas)" ]] && e_error "Mac apps need mas to install." && return 1
 
 # Exit if not logged in to Mac Application Store
-info=$(mas account)
-[[ $info == *"Not signed in"* ]] && e_error "You're not logged in to Mac Application Store. Please log in via GUI." && return 1
 e_header "Installing mac apps from account: ${info}"
 
 # Mac Appstore apps
