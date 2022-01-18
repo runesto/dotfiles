@@ -2,9 +2,10 @@
   name = Rune Storløpa
   email = <>
 [core]
-  editor = vim
+  editor = vi
   excludesfile = ~/.gitignore_global
   precomposeunicode = true
+  autocrlf = true
 [alias]
   co = checkout
   ci = commit
