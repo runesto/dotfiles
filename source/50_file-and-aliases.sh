@@ -21,3 +21,5 @@ alias eachdir=". eachdir"
 function md() {
   mkdir -p "$@" && cd "$@"
 }
+
+alias portscan='sudo lsof -i -P | grep LISTEN | grep :$PORT'

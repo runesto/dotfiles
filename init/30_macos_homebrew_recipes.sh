@@ -66,6 +66,7 @@ casks=(
   1password
   alfred
   asana
+  colima # For running oracle in Docker on ARM64
   docker
   disk-inventory-x
   dropbox
