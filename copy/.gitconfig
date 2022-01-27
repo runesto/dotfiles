@@ -5,7 +5,7 @@
   editor = vi
   excludesfile = ~/.gitignore_global
   precomposeunicode = true
-  autocrlf = true
+  autocrlf = input
 [alias]
   co = checkout
   ci = commit
