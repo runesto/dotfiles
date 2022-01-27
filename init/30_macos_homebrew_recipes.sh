@@ -38,7 +38,10 @@ recipes=(
   awscli
   bash-completion
   bat
+  colima # For running oracle in Docker on ARM64
   curl
+  docker # Instead of Docker desktop because of colima
+  docker-compose # Instead of Docker desktop because of colima
   dos2unix
   git
   git-secret
@@ -66,8 +69,7 @@ casks=(
   1password
   alfred
   asana
-  colima # For running oracle in Docker on ARM64
-  docker
+#  docker # Not using docker desktop on Apple ARM as of now (because of oracle)
   disk-inventory-x
   dropbox
   evernote
