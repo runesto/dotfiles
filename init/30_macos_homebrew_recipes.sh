@@ -70,6 +70,7 @@ casks=(
   alfred
   asana
 #  docker # Not using docker desktop on Apple ARM as of now (because of oracle)
+  cyberduck
   disk-inventory-x
   dropbox
   evernote
