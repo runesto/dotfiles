@@ -2,6 +2,7 @@ export DOTFILES=~/.dotfiles
 
 # fpath
 fpath=($DOTFILES/zfunctions $DOTFILES/vendor/zsh-completions/src $fpath)
+fpath=($DOTFILES/vendor/compose/contrib/completion/zsh $DOTFILES/vendor/cli/contrib/completion/zsh $fpath) # docker && docker-compose
 
 # Source all files in "source"
 function src() {
