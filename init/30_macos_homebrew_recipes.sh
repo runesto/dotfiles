@@ -43,15 +43,18 @@ recipes=(
   docker # Instead of Docker desktop because of colima
   docker-compose # Instead of Docker desktop because of colima
   dos2unix
+  fluxcd/tap/flux
   git
   git-secret
   gnupg
   gradle
   httpie
   jenv
+  kind
   # kubernetes-cli # (part of Docker-cask)
   kubectx
   # kubernetes-helm@2.11.0 #Ruter
+  kustomize
   maven
   mas
   n
@@ -69,7 +72,7 @@ casks=(
   1password
   alfred
   asana
-#  docker # Not using docker desktop on Apple ARM as of now (because of oracle)
+  docker # Not using docker desktop on Apple ARM as of now (because of oracle)
   cyberduck
   disk-inventory-x
   dropbox
