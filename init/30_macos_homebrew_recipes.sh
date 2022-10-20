@@ -44,9 +44,11 @@ recipes=(
   docker-compose # Instead of Docker desktop because of colima
   dos2unix
   fluxcd/tap/flux
+  gh
   git
   git-secret
   gnupg
+  gnu-sed
   gradle
   httpie
   jenv
@@ -57,11 +59,12 @@ recipes=(
   kustomize
   maven
   mas
-  n
+  n # node-version handler
   # datawire/blackbird/telepresence # Ruter
   tree
   watch
   wget
+  xidel
 )
 
 brew_install_recipes
@@ -72,7 +75,7 @@ casks=(
   1password
   alfred
   asana
-  docker # Not using docker desktop on Apple ARM as of now (because of oracle)
+  # docker # Not using docker desktop on Apple ARM as of now (because of oracle)
   cyberduck
   disk-inventory-x
   dropbox
