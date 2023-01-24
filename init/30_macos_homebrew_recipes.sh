@@ -43,6 +43,7 @@ recipes=(
   docker # Instead of Docker desktop because of colima
   docker-compose # Instead of Docker desktop because of colima
   dos2unix
+  drawio
   fluxcd/tap/flux
   gh
   git

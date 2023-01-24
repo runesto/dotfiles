@@ -9,7 +9,7 @@
 [alias]
   co = checkout
   ci = commit
-  st = status
+  st = status -s
   stat = status
   lg = log --graph --pretty=format:'%Cred%h %an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lgd = log --graph --pretty=format:'%Cred%h %an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd)%Creset'

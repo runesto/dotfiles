@@ -4,7 +4,7 @@ export GOSU_UID=`id -u` GOSU_GID=`id -g` # ???
 export TXS_PORT_8080_TCP_ADDR=localhost # The host which is running the TXS app
 export TXS_PORT_8080_TCP_PORT=8080 # The port the TXS app is running on
 export CCO_PORT_8080_TCP_ADDR=localhost  # The host which is running the CCO app
-export CCO_PORT_8080_TCP_PORT=8089 # The port CCO app is running on
+export CCO_PORT_8080_TCP_PORT=8080 # The port CCO app is running on
 #export WMQ_PORT_1414_TCP_ADDR=192.168.1.37 # The host which is running the MQ server
 export WMQ_PORT_1414_TCP_ADDR=localhost # The host which is running the MQ server
 export WMQ_PORT_1414_TCP_PORT=1414 # The port the MQ server is running on
