@@ -19,7 +19,9 @@ function brew_install_casks() {
 # Homebrew casks
 casks=(
   # Applications
+  evernote
 #  flowsync # Bruker telefonen istedenfor
+  kindle
   sonos
   steam
 )

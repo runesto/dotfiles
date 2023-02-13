@@ -22,10 +22,6 @@ e_header "Installing mac apps from account: ${info}"
 apps=(
   937984704 # Amphetamine
   409183694 # Keynote
-  441258766 # Magnet
-  409907375 # Remote Desktop
-  557168941 # Tweetbot
-  1284863847 # Unsplash Wallpapers
 )
 
 mac_application_store_install
