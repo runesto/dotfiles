@@ -11,8 +11,8 @@
   ci = commit
   st = status -s
   stat = status
-  lg = log --graph --pretty=format:'%Cred%h %an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-  lgd = log --graph --pretty=format:'%Cred%h %an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd)%Creset'
+  lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>;%Creset' --abbrev-commit --date=relative"
+  lgd = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
   changes = diff --name-status -r
   diffstat = diff --stat -r
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
@@ -40,10 +40,16 @@
   ui = auto
 
 [push]
-  default = tracking
+  default = upstream
+
+[branch]
+  autosetuprebase = always
 
 [includeIf "gitdir:~/src/private/"]
   path = ~/.gitconfig_private
 
 [includeIf "gitdir:~/src/tietoevry/"]
   path = ~/.gitconfig_tietoevry
+
+[includeIf "gitdir:~/src/skatt/"]
+  path = ~/.gitconfig_skatt

@@ -1,0 +1,6 @@
+[user]
+    name = Rune U3RvcmzDuHBh
+    email = Rune.Storlopa@skatteetaten.no
+
+[credential]
+    helper = osxkeychain
