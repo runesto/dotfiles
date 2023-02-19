@@ -48,7 +48,6 @@ casks=(
   disk-inventory-x
   dropbox
   flux
-  freemind
   freeplane
   kiwi-for-gmail
   mailplane
