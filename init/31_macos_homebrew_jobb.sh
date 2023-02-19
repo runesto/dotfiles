@@ -49,6 +49,7 @@ casks=(
   dropbox
   flux
   freemind
+  freeplane
   kiwi-for-gmail
   mailplane
   microsoft-office

@@ -49,7 +49,7 @@ casks=(
   firefox
   google-chrome
   intellij-idea
-  iterm2
+  iterm2  # set color "tango dark"
   postman
   slack
 )
