@@ -52,6 +52,7 @@ casks=(
   iterm2  # set color "tango dark"
   postman
   slack
+  visual-studio-code
 )
 
 brew_install_casks
