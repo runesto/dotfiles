@@ -61,6 +61,7 @@ casks=(
   mattermost
   temurin8
   temurin11
+  temurin17
   temurin
 )
 
