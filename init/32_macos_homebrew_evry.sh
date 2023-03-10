@@ -31,9 +31,9 @@ function brew_install_casks() {
 # Homebrew recipes
 recipes=(
   act
-  colima # For running oracle in Docker on ARM64
-  docker # Instead of Docker desktop because of colima
-  docker-compose # Instead of Docker desktop because of colima
+  # colima # For running oracle in Docker on ARM64
+  # docker # Instead of Docker desktop because of colima
+  # docker-compose # Instead of Docker desktop because of colima
   drawio
 )
 

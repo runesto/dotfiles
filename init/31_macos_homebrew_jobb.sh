@@ -44,7 +44,7 @@ casks=(
   1password
   alfred
   asana
-  # docker # Not using docker desktop on Apple ARM as of now (because of oracle)
+  docker # Docker Desktop. Can't be used if needing Oracle
   disk-inventory-x
   dropbox
   flux
