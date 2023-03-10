@@ -63,7 +63,10 @@ casks=(
   temurin11
   temurin17
   temurin
-)
+  # My additions
+  alfred
+  rectangle
+  spotify)
 
 brew_install_casks
 
