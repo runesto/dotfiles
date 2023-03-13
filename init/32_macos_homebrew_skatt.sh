@@ -65,6 +65,7 @@ casks=(
   temurin
   # My additions
   alfred
+  flux
   rectangle
   spotify)
 
