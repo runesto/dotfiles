@@ -44,6 +44,7 @@ recipes=(
   moreutils
   nvm
   openshift-cli
+  podman
   stern
   tree
   vim
