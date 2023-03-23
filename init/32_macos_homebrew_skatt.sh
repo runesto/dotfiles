@@ -44,12 +44,14 @@ recipes=(
   moreutils
   nvm
   openshift-cli
-  podman
   stern
   tree
   vim
   watch
   wget
+  # My additions
+  docker
+  podman
 )
 
 brew_install_recipes
