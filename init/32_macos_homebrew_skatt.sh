@@ -30,14 +30,30 @@ function brew_install_casks() {
 
 # Homebrew recipes
 recipes=(
+  az
+  azure/kubelogin/kubelogin
   bash-completion@2
+  bruno
+  cmctl
   coreutils
   curl
   findutils
+  fluxcd/tap/flux@0.41
+  gh
   git
+  helm
   htop
   httpie
+  istioctl
   jq
+  k9s
+  kubeconform
+  kubectl
+  kubectx
+  kubelogin
+  kubeseal
+  kustomize
+  tkn
   tmux
   maven
   media-info
@@ -46,12 +62,15 @@ recipes=(
   openshift-cli
   stern
   tree
+  unzip
   vim
   watch
   wget
+  yq
   # My additions
   docker
   podman
+  podman-compose
 )
 
 brew_install_recipes
