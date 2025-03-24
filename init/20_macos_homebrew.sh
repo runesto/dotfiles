@@ -18,6 +18,7 @@ export PATH="/usr/local/sbin:$PATH"
 e_header "Updating Homebrew"
 brew doctor
 brew update
+brew upgrade
 
 e_header "Tapping extra casks"
 brew tap homebrew/cask-drivers # To install cask sonos

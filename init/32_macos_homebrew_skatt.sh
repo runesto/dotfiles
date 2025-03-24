@@ -77,18 +77,9 @@ brew_install_recipes
 
 # Homebrew casks
 casks=(
-  cakebrew
-  iterm2
-  jetbrains-toolbox
-  mattermost
-  temurin8
-  temurin11
-  temurin17
-  temurin
   # My additions
   alfred
   flux
-  rectangle
   spotify)
 
 brew_install_casks

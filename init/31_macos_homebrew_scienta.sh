@@ -48,19 +48,22 @@ casks=(
   disk-inventory-x
   dropbox
   flux
+  firefox
   freeplane
+  google-chrome
+  intellij-idea
+  iterm2  # set color "tango dark"
   kiwi-for-gmail
   mailplane
   microsoft-office
-  proxifier # TietoEvry
+  postman
   remember-the-milk
   slack
   snagit
   spotify
   sublime-text
-  temurin # Java17
-  temurin11 # Java11
   the-unarchiver
+  visual-studio-code
   vlc
   zoom
 )

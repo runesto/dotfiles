@@ -19,11 +19,16 @@ function brew_install_casks() {
 # Homebrew casks
 casks=(
   # Applications
-  evernote
-#  flowsync # Bruker telefonen istedenfor
+  firefox
+  google-chrome
+  intellij-idea
+  iterm2  # set color "tango dark"
   kindle
+  postman
+  slack
   sonos
   steam
+  visual-studio-code
 )
 
 brew_install_casks

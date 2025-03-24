@@ -44,17 +44,4 @@ recipes=(
 
 brew_install_recipes
 
-# Homebrew casks
-casks=(
-  firefox
-  google-chrome
-  intellij-idea
-  iterm2  # set color "tango dark"
-  postman
-  slack
-  visual-studio-code
-)
-
-brew_install_casks
-
 # Misc cleanup!
