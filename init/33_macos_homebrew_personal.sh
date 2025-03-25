@@ -23,7 +23,6 @@ casks=(
   google-chrome
   intellij-idea
   iterm2  # set color "tango dark"
-  kindle
   postman
   slack
   sonos
