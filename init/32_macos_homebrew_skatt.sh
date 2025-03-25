@@ -38,7 +38,7 @@ recipes=(
   coreutils
   curl
   findutils
-  fluxcd/tap/flux@0.41
+  fluxcd/tap/flux
   gh
   git
   helm
@@ -50,18 +50,17 @@ recipes=(
   kubeconform
   kubectl
   kubectx
-  kubelogin
   kubeseal
   kustomize
-  tkn
-  tmux
   maven
   media-info
   moreutils
   nvm
   openshift-cli
   stern
+  tektoncd-cli
   tree
+  tmux
   unzip
   vim
   watch
