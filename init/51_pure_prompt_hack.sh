@@ -14,8 +14,11 @@ if [[ $current_code == $original_code ]]; then
 elif [[ $current_code == $edited_code ]]; then
 	echo "Edited"
 else
-	echo $original_code_without_whitespace
-	echo $original_code
-	echo $edited_code
-	echo $current_code
+	echo
+	echo "Script couldn't check. These are the variables"
+	echo
+	echo "original_code_without_whitespace: $original_code_without_whitespace"
+	echo "original_code: $original_code"
+	echo "edited_code: $edited_code"
+	echo "current_code: $current_code"
 fi

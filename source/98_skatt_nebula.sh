@@ -5,4 +5,8 @@ if [[ -d "$HOME/src/skatt" && ! -d "$HOME/src/skatt/neb/nebula-tools" ]]; then
   cd
 fi
 
+cd ${HOME}/src/skatt/neb/nebula-tools/
+git pull
+cd
+
 export PATH=$PATH:${HOME}/src/skatt/neb/nebula-tools/scripts
