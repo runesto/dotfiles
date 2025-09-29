@@ -57,6 +57,7 @@ recipes=(
   moreutils
   nvm
   openshift-cli
+  pgadmin4
   stern
   tektoncd-cli
   tree
