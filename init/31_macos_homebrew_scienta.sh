@@ -44,6 +44,7 @@ casks=(
   1password
   alfred
   asana
+  claude-code
   docker # Docker Desktop. Can't be used if needing Oracle
   disk-inventory-x
   dropbox
