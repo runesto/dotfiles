@@ -7,6 +7,6 @@ fi
 
 cd ${HOME}/src/skatt/neb/nebula-tools/
 git pull
-cd
+cd -
 
 export PATH=$PATH:${HOME}/src/skatt/neb/nebula-tools/scripts

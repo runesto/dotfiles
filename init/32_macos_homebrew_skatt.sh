@@ -41,6 +41,7 @@ recipes=(
   fluxcd/tap/flux
   gh
   git
+  headlamp
   helm
   htop
   httpie
