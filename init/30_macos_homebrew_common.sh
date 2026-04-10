@@ -35,6 +35,7 @@ recipes=(
   git
   gradle
   httpie
+  keepingyouawake
   maven
   tree
   vim
