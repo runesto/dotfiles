@@ -57,6 +57,7 @@ casks=(
   kiwi-for-gmail
   mailplane
   microsoft-office
+  opencode
   postman
   remember-the-milk
   slack

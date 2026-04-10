@@ -23,3 +23,9 @@ function md() {
 }
 
 alias portscan='sudo lsof -i -P | grep LISTEN | grep :$PORT'
+
+# Source - https://stackoverflow.com/a/33303456
+# Posted by dumbledad
+# Retrieved 2026-03-06, License - CC BY-SA 3.0
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
